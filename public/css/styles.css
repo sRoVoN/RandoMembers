@@ -1,0 +1,52 @@
+@font-face {
+    font-family:'Caveat', cursive;
+    src:  url("../fonts/Caveat/Caveat-SemiBold.ttf") format(ttf);
+    src: url("../fonts/Caveat/Caveat-Bold.ttf") format(ttf);
+    src: url("../fonts/Caveat/Caveat-Medium.ttf") format(ttf);
+    src: url("../fonts/Caveat/Caveat-Regular.ttf") format(ttf);
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;   
+}
+
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    src:  url("../fonts/Poppins/Poppins-Thin.ttf") format(ttf);
+    src:  url("../fonts/Poppins/Poppins-Light.ttf") format(ttf);
+    src: url("../fonts/Poppins/Poppins-Bold.ttf") format(ttf);
+    src: url("../fonts/Poppins/Poppins-Medium.ttf") format(ttf);
+    src: url("../fonts/Poppins/Poppins-Regular.ttf") format(ttf);
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;   
+}
+
+@font-face {
+    font-family: 'Protest Riot', sans-serif;
+    src:  url("../fonts/PrOtest/ProtestRevolution-Regular.ttf") format(ttf);
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;   
+}
+
+@font-face {
+    font-family: 'Dosis', sans-serif;
+    src:  url("../fonts/Dosis/Dosis-Regular.ttf") format(ttf);
+    src:  url("../fonts/Dosis/Dosis-Bold.ttf") format(ttf);
+    src:  url("../fonts/Dosis/Dosis-Medium.ttf") format(ttf);
+    src:  url("../fonts/Dosis/Dosis-Light.ttf") format(ttf);
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;   
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    -ms-overflow-style: none;
+    stroke-width: none;
+}
+
+.MuiCard-root::-webkit-scrollbar {
+    display: none;
+}
