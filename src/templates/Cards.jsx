@@ -13,9 +13,9 @@ import { useEffect } from "react";
 
 export const Cards = ({
   member,
-  loading = { loading },
-  setLoading = { setLoading },
-  index = { index },
+  loading ,
+  setLoading,
+  index,
 }) => {
   useEffect(() => {
     setLoading(true);
@@ -25,7 +25,7 @@ export const Cards = ({
     return () => {
       setLoading(false);
     };
-  }, []);
+  }, [setLoading]);
   return (
     <Slide
       direction="up"
