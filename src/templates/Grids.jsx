@@ -10,7 +10,7 @@ export const Grids = ({ member, index, loading, setLoading }) => {
       setLoading(false);
     }
 
-  }, []);
+  }, [setLoading]);
   return (
     <Slide
     direction="left"
