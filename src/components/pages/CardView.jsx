@@ -1,3 +1,4 @@
+import * as React from "react";
 import { Box } from "@mui/material";
 import { useEffect } from "react";
 import { Grid } from "@mui/material";
@@ -17,6 +18,8 @@ const CardView = ({
   setPagination,
   setIsLoading,
   isLoading,
+  loading,
+  setLoading,
 }) => {
   const handlePageChange = (event, page) => {
     const from = (page - 1) * pageSize;
@@ -59,7 +62,15 @@ const CardView = ({
         {isLoading ? (
           <Spinner />
         ) : (
-          members.map((member, index) => <Cards key={index} member={member} />)
+          members.map((member, index) => (
+            <Cards
+              key={index}
+              member={member}
+              loading={loading}
+              setLoading={setLoading}
+              index={index}
+            />
+          ))
         )}
       </Grid>
       <AppPagination
