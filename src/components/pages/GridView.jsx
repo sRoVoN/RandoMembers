@@ -17,6 +17,8 @@ const GridView = ({
   pagination,
   setPagination,
   setIsLoading,
+  loading,
+  setLoading
 }) => {
   const handlePageChange = (event, page) => {
     const from = (page - 1) * pageSize;
@@ -58,7 +60,7 @@ const GridView = ({
           columns={{ xs: 4, sm: 8, md: 12 }}
         >
           {members.map((member, index) => (
-            <Grids member={member} key={index} />
+            <Grids member={member} key={index} index={index} loading={loading} setLoading={setLoading}/>
           ))}
         </Grid>
       )}
