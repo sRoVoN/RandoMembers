@@ -25,6 +25,7 @@ const App = () => {
   const query = useTheme();
   const isSmUp = useMediaQuery(query.breakpoints.up("sm"));
   const [isLoading, setIsLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [results, setResults] = useState([]);
   const [avatars, setAvatars] = useState([]);
   const [members, setMembers] = useState([]);
@@ -76,6 +77,8 @@ const App = () => {
         setMembers,
         pagination,
         setPagination,
+        loading,
+        setLoading
       }}
     >
       <MainLayout theme={theme} mode={mode}>
@@ -96,6 +99,8 @@ const App = () => {
             <GridView
               helmetTitle="GridView"
               isLoading={isLoading}
+              loading={loading}
+              setLoading={setLoading}
               setIsLoading={setIsLoading}
               members={members}
               setMembers={setMembers}
@@ -108,6 +113,8 @@ const App = () => {
               helmetTitle="CardView"
               setIsLoading={setIsLoading}
               isLoading={isLoading}
+              loading={loading}
+              setLoading={setLoading}
               members={members}
               setMembers={setMembers}
               pagination={pagination}
